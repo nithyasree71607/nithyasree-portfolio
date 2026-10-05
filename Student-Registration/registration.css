@@ -1,0 +1,166 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ede9fe, #f5f3ff);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #7c3aed;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.gender {
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+.gender input {
+    width: auto;
+}
+
+button {
+    margin-top: 28px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #7c3aed;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5b21b6;
+    transform: translateY(-2px);
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+
+    color: #16a34a;
+
+    font-weight: bold;
+}
+
+.back {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #7c3aed;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .gender {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
